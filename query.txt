@@ -1,0 +1,22 @@
+query child to parent
+
+SELECT Email__c,First_Name__c,name__r.Name, name__r.Description__c FROM Speaker__c
+
+SELECT Speaker__c.Email__c, Speaker__c.name__c from Speaker__c
+
+
+
+query parent to child
+SELECT Id,Name, (SELECT CreatedDate, Name, LastModifiedDate FROM Speakers__r) FROM Session__c
+
+
+1. SQL to SOQL
+2. About SOSL
+3. Adding Custom Field
+4. Compact Layout
+5. Global Action
+6. Publisher Layout
+7. Adding Formula Field
+8. Validation Rule
+9. Process Builder
+10. Report Creation
